@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="gallery.css">
+    <title>gallery - kellyville computers</title>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="nav-logo">kellyville computers</a>
+    </nav>
+
+    <div class="gallery-container">
+        <h1>our previous builds</h1>
+        <div class="gallery-grid">
+            <div class="gallery-item large" data-build-id="1">
+                <img src="https://placehold.co/800x600" alt="High-End Gaming Build" loading="lazy" width="800" height="600">
+                <div class="item-overlay">
+                    <h3>ultimate gaming rig</h3>
+                    <p>rtx 4090 build</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-build-id="2">
+                <img src="https://placehold.co/400x400" alt="Streaming PC" loading="lazy" width="400" height="400">
+                <div class="item-overlay">
+                    <h3>stream master</h3>
+                    <p>dual pc setup</p>
+                </div>
+            </div>
+            <div class="gallery-item tall" data-build-id="3">
+                <img src="https://placehold.co/400x600" alt="Workstation Build" loading="lazy" width="400" height="600">
+                <div class="item-overlay">
+                    <h3>creator pro</h3>
+                    <p>workstation build</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-build-id="4">
+                <img src="https://placehold.co/400x400" alt="Mini ITX Build" loading="lazy" width="400" height="400">
+                <div class="item-overlay">
+                    <h3>compact beast</h3>
+                    <p>mini itx build</p>
+                </div>
+            </div>
+            <div class="gallery-item wide" data-build-id="5">
+                <img src="https://placehold.co/800x400" alt="Custom Water Cooling" loading="lazy" width="800" height="400">
+                <div class="item-overlay">
+                    <h3>aqua force</h3>
+                    <p>custom water cooling</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-build-id="6">
+                <img src="https://placehold.co/400x400" alt="Budget Gaming" loading="lazy" width="400" height="400">
+                <div class="item-overlay">
+                    <h3>budget warrior</h3>
+                    <p>price/performance king</p>
+                </div>
+            </div>
+            <div class="gallery-item wide" data-build-id="1">
+                <img src="https://placehold.co/800x400" alt="Gaming Build Detail" loading="lazy" width="800" height="400">
+                <div class="item-overlay">
+                    <h3>rgb perfection</h3>
+                    <p>ultimate gaming rig</p>
+                </div>
+            </div>
+            <div class="gallery-item tall" data-build-id="5">
+                <img src="https://placehold.co/400x600" alt="Water Cooling Detail" loading="lazy" width="400" height="600">
+                <div class="item-overlay">
+                    <h3>liquid dreams</h3>
+                    <p>custom loop detail</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Build Detail Modal -->
+    <div class="modal" id="buildModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-gallery">
+                <div class="main-image">
+                    <img src="" alt="Main Build Image" id="modalMainImage">
+                    <button class="gallery-nav prev">&#10094;</button>
+                    <button class="gallery-nav next">&#10095;</button>
+                </div>
+                <div class="thumbnail-strip"></div>
+            </div>
+            <div class="build-details">
+                <div class="specs-container">
+                    <div class="info-column">
+                        <div class="build-header">
+                            <h2 id="modalTitle"></h2>
+                            <div class="build-description" id="modalDescription"></div>
+                            <div class="quote-section">
+                                <span class="quote-text">get a quote.</span>
+                                <button class="quote-button">contact us</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="specs-column">
+                        <h3>specifications</h3>
+                        <ul id="modalSpecs"></ul>
+                    </div>
+                </div>
+                <button class="inquire-button">contact us, get a quote</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="gallery.js"></script>
+</body>
+</html>

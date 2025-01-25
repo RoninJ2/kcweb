@@ -1,0 +1,125 @@
+.process-container {
+    padding: 120px 40px 60px;
+    max-width: 1400px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.process-title {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 80px;
+    color: #ffffff;
+    text-transform: lowercase;
+    letter-spacing: 3px;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.4),
+                 0 0 40px rgba(255, 255, 255, 0.2),
+                 0 0 60px rgba(255, 255, 255, 0.1);
+    transform: translateZ(0);
+}
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    padding: 20px;
+    perspective: 1000px;
+}
+
+.process-step {
+    background: linear-gradient(145deg, #2a2a2a, #202020);
+    border-radius: 15px;
+    padding: 40px 30px;
+    position: relative;
+    transition: all 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transform-style: preserve-3d;
+    transform: translateZ(0);
+}
+
+.process-step:hover {
+    transform: translateY(-10px) translateZ(20px);
+    background: linear-gradient(145deg, #2d2d2d, #232323);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.step-number {
+    font-size: 120px;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.03);
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-family: 'Segoe UI', sans-serif;
+    transform: translateZ(-10px);
+    user-select: none;
+}
+
+.step-content {
+    position: relative;
+    z-index: 1;
+    transform: translateZ(30px);
+}
+
+.step-content h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-transform: lowercase;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    letter-spacing: 1px;
+}
+
+.step-content p {
+    color: #b0b0b0;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+.step-action {
+    display: inline-block;
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    padding: 12px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    backdrop-filter: blur(5px);
+}
+
+.step-action:hover {
+    background: #ffffff;
+    color: #1a1a1a;
+    transform: translateY(-2px) translateZ(50px);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 768px) {
+    .process-container {
+        padding: 100px 20px 40px;
+    }
+
+    .process-title {
+        font-size: 36px;
+        margin-bottom: 60px;
+    }
+
+    .process-grid {
+        gap: 30px;
+    }
+
+    .step-number {
+        font-size: 100px;
+    }
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>kellyville computers</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="logo">kellyville computers</h1>
+        <p class="slogan">your dream pc starts here</p>
+        <a href="#process-section" class="start-button">start your build</a>
+    </div>
+
+    <div class="wave-separator">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120" preserveAspectRatio="none">
+            <path class="wave-fill" d="M0,96L34.3,85.3C68.6,75,137,53,206,42.7C274.3,32,343,32,411,37.3C480,43,549,53,617,58.7C685.7,64,754,64,823,58.7C891.4,53,960,43,1029,42.7C1097.1,43,1166,53,1234,58.7C1302.9,64,1371,64,1406,64L1440,64L1440,120L1405.7,120C1371.4,120,1303,120,1234,120C1165.7,120,1097,120,1029,120C960,120,891,120,823,120C754.3,120,686,120,617,120C548.6,120,480,120,411,120C342.9,120,274,120,206,120C137.1,120,69,120,34,120L0,120Z"></path>
+        </svg>
+    </div>
+
+    <section class="recent-builds">
+        <h2 data-text="our recent builds">our recent builds</h2>
+        <div class="builds-container">
+            <div class="build-card">
+                <img src="https://placehold.co/400x300" alt="Gaming PC Build">
+                <h3>stealth gaming pro</h3>
+                <p class="specs">
+                    rtx 4080 • i9-13900k<br>
+                    32gb ddr5 • 2tb nvme
+                </p>
+            </div>
+            <div class="build-card">
+                <img src="https://placehold.co/400x300" alt="Workstation Build">
+                <h3>creator workstation</h3>
+                <p class="specs">
+                    rtx 4090 • ryzen 9 7950x<br>
+                    64gb ddr5 • 4tb nvme
+                </p>
+            </div>
+            <div class="build-card">
+                <img src="https://placehold.co/400x300" alt="Compact Build">
+                <h3>mini powerhouse</h3>
+                <p class="specs">
+                    rtx 4070 • i7-13700k<br>
+                    32gb ddr5 • 1tb nvme
+                </p>
+            </div>
+        </div>
+        <a href="gallery.html" class="view-more">view more</a>
+    </section>
+
+    <div class="slant-divider"></div>
+
+    <section id="process-section" class="process-section">
+        <div class="process-container">
+            <h2 class="process-title">your journey starts here</h2>
+            <div class="process-grid">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h2>explore our builds</h2>
+                        <p>browse through our gallery of custom builds. get inspired and discover what's possible for your dream setup. <a href="gallery.html" class="text-link">view our gallery →</a></p>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h2>design your build</h2>
+                        <p>tell us your vision - gaming, streaming, work, or all of the above. we'll help you choose the perfect components for your needs.</p>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h2>get your quote</h2>
+                        <p>ready to start? <a href="#contact-section" class="text-highlight contact-scroll">contact us</a> for a detailed quote with full component breakdown. we ensure transparency with no hidden costs.</p>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h2>watch it come to life</h2>
+                        <p>our expert team carefully builds your custom PC with precision and attention to detail. we'll keep you updated throughout the entire process.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="wave-separator">
+        <svg viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <path class="wave-fill light-wave" d="M0,0L48,5.3C96,11,192,21,288,26.7C384,32,480,32,576,37.3C672,43,768,53,864,53.3C960,53,1056,43,1152,37.3C1248,32,1344,32,1392,32L1440,32L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z"></path>
+        </svg>
+    </div>
+
+    <section id="contact-section" class="contact-section">
+        <div class="contact-container">
+            <h2 class="contact-title">let's build something amazing</h2>
+            <p class="contact-subtitle">tell us about your dream build</p>
+            
+            <form id="contact-form" class="contact-form">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <input type="text" id="name" class="form-input" required>
+                        <label for="name" class="form-label">your name</label>
+                        <div class="form-line"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" id="email" class="form-input" required>
+                        <label for="email" class="form-label">email</label>
+                        <div class="form-line"></div>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <input type="text" id="build-type" class="form-input" required>
+                        <label for="build-type" class="form-label">what's this build for? (gaming, streaming, work)</label>
+                        <div class="form-line"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" id="budget" class="form-input" required>
+                        <label for="budget" class="form-label">budget range</label>
+                        <div class="form-line"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" id="timeline" class="form-input" required>
+                        <label for="timeline" class="form-label">preferred timeline</label>
+                        <div class="form-line"></div>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <textarea id="specs" class="form-input form-textarea" required></textarea>
+                        <label for="specs" class="form-label">specific requirements or preferences</label>
+                        <div class="form-line"></div>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <textarea id="additional" class="form-input form-textarea" required></textarea>
+                        <label for="additional" class="form-label">anything else we should know?</label>
+                        <div class="form-line"></div>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-button">
+                    <span class="button-text">send it our way</span>
+                    <span class="button-icon">→</span>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
